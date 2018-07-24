@@ -1,91 +1,73 @@
 <!DOCTYPE html>
 <html>
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bgimg {
-    background-image: url("https://wallpapermemory.com/uploads/702/ken-kaneki-background-ultra-hd-4k-150341.jpg");
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-}
-
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-.bottomleft a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-hr {
-    margin: auto;
-    width: 40%;
-}
-</style>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <title>Odar Army</title>
+    <meta property="og:title" content="Odar Army" />
+    <meta property="og:url" content="https://odararmy.github.io/"/>
+    <meta property="og:description" content="Official Odar Army website">
+    <meta property="og:image" content="https://media.odar.xyz/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" href="./Images/logo.png">
+    <script src="main.js"></script>
+</head>
 <body>
-
-<div class="bgimg">
-  <div class="topleft">
-    <p><a href="index.html"><img src="https://cdn.discordapp.com/avatars/291221132256870400/c8c2af80d22b9fc06d4a65e12411e59a.png?size=2048" alt="Logo" width="100px" height="100px"></a></p>
-  </div>
-  <div class="middle">
-    <h1>SITE COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p><a href="index.html">BACK</a></p>
-  </div>
-</div>
-
-<script>
-var countDownDate = new Date("Aug 27, 2018 15:00:00").getTime();
-
-var countdownfunction = setInterval(function() {
-
-    var now = new Date().getTime();
-    
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
-
+    <div class="navbar">
+        <a href="index.html"><img src="./Images/logo.png" class="logo" width="100" height="100"></a>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="server.html">SERVER</a>
+            <a href="projects.html">PROJECTS</a>
+        </div>
+    </div>
+    <header>
+        <br>
+        <h1><span>Odar Army</span></h1>
+        <br>
+        <h2>We make things ¯\_(ツ)_/¯</h2>
+        <br>
+    </header>
+    <div class="langs">
+        <br>
+        <h1><span>Languages</span></h1>
+        <br>
+        <ul>
+            <li>HTML <br> <progress min="0" max="100" value="98"></progress> </li>
+            <li>CSS <br> <progress min="0" max="100" value="80"></progress> </li>
+            <li>JavaScript <br> <progress min="0" max="100" value="75"></progress> </li>
+            <li>Batch <br> <progress min="0" max="100" value="10"></progress> </li>
+        </ul>
+    </div>
+    <div class="projs">
+        <br>
+        <h1><span>Projects</span></h1>
+        <br>
+        <h3>You can check our projects in our <a href="projects.html">projects</a> page</h3>
+        <br>
+        <h4>Got any question about our projects?</h4>
+        <h5>Come and ask us on our Dsiacord <a target="_blank" href="server.html">server</a></h5>
+    </div>
+    <!--div class="random">
+        <img src="https://i.imgur.com/1aC7aed.png" alt="">
+    </div> -->
+    <div class="links">
+        <h1>Find us on</h1>
+        <br>
+        <ul>
+            <li><a target="_blank" href="github.html"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a target="_blank" href="discord.html"><i class="fab fa-discord"></i> Discord</a></li>
+            <li><a target="_blank" href="patreon.html"><i class="fab fa-patreon"></i> Pateron</a></li>
+            <li><a target="_blank" href="steam.html"><i class="fab fa-steam"></i> Steam</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; Copyright 2018 Odar Army</p>
+        <p>&copy; Design by <a href="https://odar.xyz" target="_blank">Odar</a></p>
+    </footer>
 </body>
 </html>
